@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <center>
+        <h1>FORM PENDAFTARAN</h1>
+        <form name="daftar" action="#" onsubmit="return simpan()">
+            <input type="text" id="nim" placeholder="nim" maxlength="10" required> <br><br>
+            <input type="text" id="nama" placeholder="nama" required> <br><br>
+            <select name="" id="prodi">
+                <option selected value="Informatika">T. Informatika</option>
+                <option value="Kimia">T. Kimia</option>
+                <option value="Industri">T. Industri</option>
+                <option value="Elektro">T. Elektro</option>
+            </select><br><br>
+            <textarea name="" id="alamat" cols="30" rows="10" placeholder="Alamat" required></textarea>
+            <p>Hobi</p>
+            <input type="checkbox" name="hobi"> Sepak Bola
+            <input type="checkbox" name="hobi"> Musik
+            <input type="checkbox" name="hobi"> Renang
+            <p>Jenis Kelamin</p>
+            <input type="radio" id="jk1" name="jk" checked> Pria
+            <input type="radio" id="jk2" name="jk"> Wanita <br><br>
+            <input type="submit" value="Simpan">
+        </form>
+    </center>
+    <script>
+        var nim = document.getElementById('nim');
+        var nama = document.getElementById('nama');
+        var prodi = document.getElementById('prodi');
+        var alamat = document.getElementById('alamat');
+        var pria = document.getElementById('jk1');
+        var wanita = document.getElementById('jk2');
+
+        function simpan() {
+            if(nim.value != "" && nama.value != "" && alamat.value != "") {
+                return true;
+            } else {
+                alert('Data Harus diisi');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

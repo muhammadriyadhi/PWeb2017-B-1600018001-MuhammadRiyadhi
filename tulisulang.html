@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>postest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <input id="nama" placeholder="Nama"> <br>
+    <input id="nim" placeholder="Nim"> <br>
+    <input id="prodi" placeholder="Prodi"> <br>
+    <textarea id="alamat" cols="30" rows="10" placeholder="Alamat"></textarea> <br>
+    <button onclick="tampil()">tampil data</button>
+
+    <h1>Nama : <span id="tnama"></span></h1>
+    <h1>Nim : <span id="tnim"></span></h1>
+    <h1>Prodi : <span id="tprodi"></span></h1>
+    <h1>Alamat : <span id="talamat"></span></h1>
+    <script>
+        var nama = document.getElementById('nama');
+        var nim = document.getElementById('nim');
+        var prodi = document.getElementById('prodi');
+        var alamat = document.getElementById('alamat');
+        
+        function tampil() {
+            document.getElementById('tnama').innerHTML = nama.value;
+            document.getElementById('tnim').innerHTML = nim.value;
+            document.getElementById('tprodi').innerHTML = prodi.value;
+            document.getElementById('talamat').innerHTML = alamat.value;
+        }
+
+    </script>
+</body>
+</html>

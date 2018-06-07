@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register tickett</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body bgcolor="black">
+    <div class="container">
+        <div class="form">
+            <div class="judul">
+                <h1>Welcome to Form Registration ticket International Coffee Day</h1>
+            </div>
+            <div class="data">
+                <form action="konek.php" method="post" onsubmit="return validasi()">
+                <div class="kiri">
+                   <div class="kotak-harga">
+                    <div class="harga-1"><input type="radio" name="harga" id="harga-1" value="500000" checked>500K</div>
+                    <div class="harga-2"><input type="radio" name="harga" id="harga-2" value="200000">200K</div>
+                   </div>
+                </div>
+                
+                <div class="kanan">
+                    <input type="text" id="namanya" name="nama" placeholder="Insert Your Name" autofocus required> <br> <br>
+                    <input type="text" name="alamat" placeholder="Insert Your Address" required> <br> <br>
+                    <input type="email" name="email" placeholder="Insert Your Mail Address" required> <br> <br>
+                    <a href="verifikasi.php">Sudah Daftar?</a>
+                </div>
+            </div>
+            <div class="tombol">
+                <div class="batal"><input type="reset" value="cancel"> </div>
+                <div class="kirim"><input type="submit" value="submit"></div>
+            </div>
+         </form>
+        </div>
+    </div>
+    <script>
+        var regAngka = /[0-9]/g;
+        var regHuruf = /[A-Za-z]/g;
+
+        var nama = document.getElementById('namanya');
+        var flag = 0;
+
+        function validasi() {
+        
+            if(regAngka.test(nama.value)) {
+                alert('There may be a mistake in the name of you !');
+                return false;
+            } else {
+                flag++;
+            }
+
+            if(flag === 1) {
+                // alert('Berhasil');
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

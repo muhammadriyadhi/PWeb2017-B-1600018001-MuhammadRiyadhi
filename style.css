@@ -1,0 +1,176 @@
+* {margin: 0; padding: 0; border: 0; background: black; z-index: -100;}
+
+@import url('Amaranth-Regular.ttf');
+
+.foto {
+    width: 100%;
+    height: 580px;
+    /* background-image: url('ceks.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid lightgrey;
+}
+
+.deskripsi {
+    width: 100%;
+    height: 518px;
+    background-color: black;
+    border-bottom: 2px solid lightgrey;
+}
+
+.deskripsi p {
+    margin-top: 30px;
+    text-align: center;
+    color: #ffda4a;
+    font-size: 2.8em;
+    font-family: 'Nueva Std';
+}
+
+.content {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.info {
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+}
+
+.konten {
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+}
+
+.konten-kiri {
+    float: left;
+    width: 50%;
+    height: 300px;
+    background-color: black;
+}
+
+.konten-kiri h1 {
+    color: white;
+    font-size: 4.2em;
+    font-family: 'andale mono';
+    font-style: italic;
+}
+
+.konten-kiri p {
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'andale mono';
+}
+
+.konten-kiri a:visited {
+    color: black;
+}
+
+.kotak {
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    background-color: #ffda4a;
+}
+
+.kotak h5 {
+    text-align: center;
+    background-color:  #ffda4a;
+    font-size: 5.5em;
+    font-family: 'andale mono';
+    font-style: italic;
+}
+
+.konten-kanan {
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-color:black;
+}
+
+.kotak-1 {
+    float: left;
+    width: 240px;
+    height: 246px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    margin-left: 50px;
+    background-color: #fff;
+    /* font-family: 'andale mono'; */
+    font-style: italic;
+}
+
+.kotak-2 {
+    float: left;
+    width: 240px;
+    height: 246px;
+    color:white;
+    text-align: center;
+    border: 1px solid white;
+    margin-left: 10px;
+    background-color: #fff;
+    /* font-family: 'andale mono'; */
+    font-style: italic;
+}
+
+th {
+    width: 240px;
+    height: 10px;
+    border: 1px solid white;
+    /* background-color: green; */
+}
+
+td {
+    color: white;
+    width: 240px;
+    height: 200px;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 4em;
+}
+
+.cc {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+}
+
+.beli {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    width: 50%;
+    align-content: center;
+    height: 70px;
+    background: whitesmoke;
+    font-size: 3em;
+    float: left;
+    border-right: 1px solid black;
+}
+
+.validasi {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    width: 50%;
+    align-content: center;
+    height: 70px;
+    background: whitesmoke;
+    font-size: 3em;
+    float: right;
+}
+
+.jarak {
+    width: 100%;
+    height: 50px;
+}
+
+.button{
+    background: white;
+    padding: 50px;
+}
